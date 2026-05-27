@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>View Students</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>View Students</h1>
+        <form action="#" method="get">
+            <input type="text" id="searchInput" placeholder="Search by name or email">
+            <details
+                <summary>Filter by Age</summary>
+                <input type="number" id="ageFilter" placeholder="Enter age">
+            </details>
+            <button type="submit">Search</button>       
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <th>Avinash</th>
+                    <th>a@example.com</th>
+                    <th>21</th>
+                </tr>
+                <td>
+                    <form action="update_student.html" method="get">
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+                <td>
+                    <form action="delete_student.html" method="get">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </thead>
+            
+        </table>
+    </body>
+</html>
