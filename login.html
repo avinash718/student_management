@@ -1,18 +1,33 @@
 <html>
+
 <head>
     <title>Student Management System</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <select id="userType">
-        <option value="admin">Admin</option>
-        <option value="student">Student</option>
-    </select>
-    <input type="text" id="username" placeholder="Username">
-    <input type="password" id="password" placeholder="Password">
-    <form action="dashboard.html" method="post">
-        <button onclick="login()">Login</button>
-    </form>
-    <p>Don't have an account? <a href="register.html">Register here</a></p>
+    <div id="c">
+        <div id="c1">
+            <h1>Login</h1>
+            <div id="c2">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username">
+            </div>
+            <div id="c2">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div id="c3">
+                <form action="dashboard.html" method="post">
+                    <button onclick="login()">Login</button>
+                </form>
+            </div>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+
+    </div>
+
+
 </body>
+
 </html>
